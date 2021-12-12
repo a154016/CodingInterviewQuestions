@@ -7,9 +7,9 @@ public class TreeSetRunner {
 	public final int a=0;
 
 	public static void main(String[] args) {
-		Employee emp1 = new Employee(1,"Ashish");
-		Employee emp2 = new Employee(1,"Ashish");
-		Employee emp3 = new Employee(1,"Mansi");
+		Employee emp1 = new Employee(1,"Ashish",null);
+		Employee emp2 = new Employee(1,"Ashish",null);
+		Employee emp3 = new Employee(1,"Mansi",null);
 		System.out.println(emp1.hashCode());
 		System.out.println(emp2.hashCode());
 		System.out.println(emp1.equals(emp2));
