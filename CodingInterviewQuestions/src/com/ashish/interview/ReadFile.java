@@ -13,27 +13,18 @@ public class ReadFile {
 	public static void main(String[] args) throws IOException {
 		
 	
-	 // File path is passed as parameter
-    File file = new File(
-        "C:\\Users\\ashis\\TestDocs\\Records.txt");
+    File file = new File("C:\\Users\\ashis\\TestDocs\\Records.txt");
 
-    // Note:  Double backquote is to avoid compiler
-    // interpret words
-    // like \test as \t (ie. as a escape sequence)
+    BufferedReader br= new BufferedReader(new FileReader(file));
 
-    // Creating an object of BufferedReader class
-    BufferedReader br
-        = new BufferedReader(new FileReader(file));
 
-    // Declaring a string variable
     String st="";
-    // Consition holds true till
-    // there is character in a string
+
     int count=0;
     List<Employe> empList=new ArrayList<Employe>();;
     while ((st = br.readLine()) != null)
     {
-        // Print the string
+        
     
     	
     }
@@ -48,6 +39,5 @@ public class ReadFile {
     
         //System.out.println(st);
    
-	}
 	}
 
